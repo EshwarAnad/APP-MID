@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+    <title>Shopping App</title>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="details.css" />
+</head>
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="left-menu">
+                <div id="logo"><a href="/index.html"><span>BOLD</span>WEAR</a></div>
+                <a href="index.html#clothing-section">Clothing</a>
+                <a href="index.html#accessory-section">Accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories"/>
+            </div>
+            <div id="right-menu">
+                <div id="cart-wrapper">
+                    <p id="cart-count">0</p>
+                    <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <img src="/assets/avatar.jpg" />
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="product-wrapper">
+                <div id="product-image">
+                    <div class="image-wrapper">
+                        <img id="product-preview" src="../assets/default-product.png" />
+                    </div>
+                </div>
+                <div id="product-details">
+                    <h1 id="product-title">Product Title</h1>
+                    <h1 id="product-brand">Product Brand</h1>
+                    <h4 class="section-heading">Price: Rs <p id="product-price">XXXX</p></h4>
+                    <h4 class="section-heading">Description</h4>
+                    <p id="description">Product Description</p>
+                    <h4 class="section-heading">Product Preview</h4>
+                    <div id="product-images">
+                    </div>
+
+                    <button id="btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <img id="BOLD-WEAR-logo" src="https://www.freepik.com/icon/moustache_2291616#fromView=search&page=1&position=60&uuid=4002d40e-ce31-4db4-a32a-c205f125656f" alt="BOLD-WEAR-logo" />
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <p href="/" class="footer-link">Men Clothing</p>
+            <p href="/" class="footer-link">Men Accessories</p>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <p href="/" class="footer-link">Home</p>
+            <p href="/" class="footer-link">About</p>
+            <p href="/" class="footer-link">Contact</p>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <p href="/" class="footer-link">ZUDIO</p>
+            <p href="/" class="footer-link">Pantaloons</p>
+            <p href="/" class="footer-link">Levis</p>
+            <p href="/" class="footer-link">UCB</p>
+            <p href="/" class="footer-link">+ Many More</p>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building UB</p>
+            <p href="/" class="footer-link">CHANGALPATTU</p>
+            <p href="/" class="footer-link">POTHERI - 603203</p>
+            <p href="/" class="footer-link">INDIA</p>
+        </div>
+    </footer>
+    <script src="base.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>

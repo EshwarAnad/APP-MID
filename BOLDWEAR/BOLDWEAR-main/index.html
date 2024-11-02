@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+    <title>Shopping App</title>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="index.css"/>
+   
+</head>
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="left-menu">
+                <div id="logo"><a href="index.html"><span>BOLD</span>WEAR</a></div>
+                <a href="#clothing-section">Clothing</a>
+                <a href="#accessory-section">Accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories"/>
+            </div>
+            <div id="right-menu">
+                <div id="cart-wrapper">
+                    <p id="cart-count">0</p>
+                    <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <img src="/assets/avatar.jpg" />
+            </div>
+        </nav>
+    </header>
+    <main>    
+
+        <div class="custom-text">
+            <h2>CRAFTED ONLY FOR <strong>"MEN"</strong></h2>
+            <h3><strong>-BY MEN</strong></h3>
+        </div>
+
+        <section id="clothing-section" class="homepage-section">
+            <h3 class="section-heading">Clothing</h3>
+
+            <div id="clothing-grid" class="product-grid">
+            </div>
+        </section>
+
+        <section id="accessory-section" class="homepage-section">
+            <h3 class="section-heading">Accessories for Men</h3>
+
+            <div id="accessory-grid" class="product-grid">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <p href="/" class="footer-link">Men Clothing</p>
+            <p href="/" class="footer-link">Men Accessories</p>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <p href="/" class="footer-link">Home</p>
+            <p href="/" class="footer-link">About</p>
+            <p href="/" class="footer-link">Contact</p>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <p href="/" class="footer-link">ZUDIO</p>
+            <p href="/" class="footer-link">Pantaloons</p> 
+            <p href="/" class="footer-link">Levis</p>
+            <p href="/" class="footer-link">UCB</p>
+            <p href="/" class="footer-link">+ Many More</p>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building UB</p>
+            <p href="/" class="footer-link">CHANGALPATTU</p>
+            <p href="/" class="footer-link">POTHERI - 603203</p>
+            <p href="/" class="footer-link">INDIA</p>
+        </div>
+    </footer>
+    <script src="base.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Buttons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+
+  </div>
+
+  <!-- Scroll Up Button -->
+  <button onclick="scrollUp()" class="scroll-button" id="scrollUp">▲</button>
+  
+  <!-- Scroll Down Button -->
+  <button onclick="scrollDown()" class="scroll-button" id="scrollDown">▼</button>
+
+  <script>
+    // Scroll up function
+    function scrollUp() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Scroll down function
+    function scrollDown() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+
+
+
+
